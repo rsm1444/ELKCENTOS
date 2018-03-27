@@ -1,0 +1,23 @@
+
+***********************************
+Log Stash References
+***********************************
+
+https://logz.io/blog/logstash-tutorial/
+
+***********************************
+Log Stash Config Location
+***********************************
+
+/etc/logstash/conf.d/
+
+***********************************
+LogStash Logs
+***********************************
+/var/log/logstash/logstash-plain.log
+
+***********************************
+LogStash Plugins list
+***********************************
+./usr/share/logstash/bin/logstash-plugin list
+
