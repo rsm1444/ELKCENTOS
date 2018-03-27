@@ -1,5 +1,47 @@
+Command to install ELK using root
+
 cd /etc/yum.repos.d/
-Create Files 
+
+Create Files  in the above Directory
+
 elasticsearch.repo
 kibana.repo
 logstash.repo
+
+***********************************
+Installing Elastic Search using YUM
+***********************************
+yum install elasticsearch
+
+*********************************************************************************************************
+Execute the following statements to configure elasticsearch service to start automatically using systemd
+*********************************************************************************************************
+ systemctl daemon-reload
+ systemctl enable elasticsearch.service
+ 
+ ***********************************
+ Start & Stop elasticsearch service
+***********************************
+
+systemctl start elasticsearch
+
+systemctl stop kibana.service
+
+***********************************
+Installing KIBANA using YUM
+***********************************
+yum install kibana
+
+*********************************************************************************************************
+Execute the following statements to configure kibana service to start automatically using systemd
+*********************************************************************************************************
+systemctl daemon-reload
+systemctl enable kibana.service 
+
+***********************************
+ Start  & Stop kibana service
+***********************************
+
+systemctl start kibana.service
+
+systemctl stop kibana.service
