@@ -45,3 +45,22 @@ systemctl enable kibana.service
 systemctl start kibana.service
 
 systemctl stop kibana.service
+
+***********************************
+Installing logstash using YUM
+***********************************
+yum install logstash
+
+*********************************************************************************************************
+Execute the following statements to configure logstash service to start automatically using systemd
+*********************************************************************************************************
+systemctl daemon-reload
+systemctl enable logstash.service
+
+***********************************
+ Start  & Stop logstash service
+***********************************
+
+ systemctl start logstash.service
+
+ systemctl stop logstash.service
