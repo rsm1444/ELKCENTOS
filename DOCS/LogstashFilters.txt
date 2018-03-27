@@ -1,0 +1,10 @@
+********************************************
+How to Validate Gork Filters/Patterns
+********************************************
+
+https://grokdebug.herokuapp.com/
+
+******************************
+Gork Patterns
+******************************
+https://github.com/logstash-plugins/logstash-patterns-core/blob/master/patterns/grok-patterns
