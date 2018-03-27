@@ -6,6 +6,11 @@ Log Stash References
 https://logz.io/blog/logstash-tutorial/
 
 ***********************************
+Log Stash Directory layout
+***********************************
+https://www.elastic.co/guide/en/logstash/6.2/dir-layout.html
+
+***********************************
 Log Stash Config Location
 ***********************************
 
