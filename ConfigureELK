@@ -1,0 +1,37 @@
+Logstatsh Configuration Location
+
+cd /etc/logstash/conf.d/
+
+
+******************************************
+Sample to test logstatsh installation
+******************************************
+
+/usr/share/logstash/bin/logstash -e 'input { stdin { } } output { stdout {} }'
+
+
+Sample Jmeter Results Processing by Logstash 
+
+input {
+  file {
+    path => [ "/temp/logstash/results.jtl"]
+  }
+}
+filter {
+  if ([message] =~ "Thread Group" || [message] =~ "BeanShell Sampler") {
+    drop { }
+  } else {
+    csv {
+        columns => ["time", "elapsed", "label", "responseCode","Num of Samples","Num of Failures" "threadName",
+                    "success", "bytes", "grpThreads", "allThreads", "Latency",
+                    "SampleCount", "ErrorCount", "Hostname"]
+    }
+  }
+}
+output {
+  stdout { codec => rubydebug }
+  elasticsearch_http {
+    host => "127.0.0.1"
+    index => "logstash-jmeter-results-%{+YYYY.MM.dd}"
+  }
+}
