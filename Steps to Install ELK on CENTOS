@@ -1,0 +1,5 @@
+cd /etc/yum.repos.d/
+Create Files 
+elasticsearch.repo
+kibana.repo
+logstash.repo
