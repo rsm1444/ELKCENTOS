@@ -1,0 +1,1 @@
+Logstash/elastic search -- https://stackoverflow.com/questions/26755717/elasticsearch-kibana-dashboard-analysis-for-jmeter-logs?rq=1
