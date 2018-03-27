@@ -1,0 +1,17 @@
+[logstash-6.x]
+name=Elastic repository for 5.5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+[rmenta@sjc04p1prflm08 yum.repos.d]$ cat kibana.repo
+[kibana-5.5.x]
+name=Kibana repository for 5.5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
